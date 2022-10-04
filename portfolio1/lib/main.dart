@@ -11,8 +11,9 @@ class Myapp extends StatelessWidget {
         appBar: AppBar(
           title: Text('MY FIRST APP'),
         ),
-        body: Text('This  default'),
-      ),
-    );
+        body: Container(decoration: BoxDecoration(color: Colors.red,),child: Text('HI'),
+        )),
+      );,;
+    )
   }
 }
