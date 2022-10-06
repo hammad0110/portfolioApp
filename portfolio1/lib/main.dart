@@ -12,37 +12,71 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[200],
-      appBar: AppBar(title: Text("PORTFOLIO")),
+      floatingActionButton: Wrap(
+        //use vertical to show  on vertical axis
+        children: <Widget>[
+          Container(
+              margin: EdgeInsets.all(15),
+              alignment: Alignment(0.19, 2),
+              child: FloatingActionButton.extended(
+                label: Text('ABOUT ME'),
+                onPressed: () {
+                  //action code for button 2
+                },
+              )), //button first
+
+          Container(
+              alignment: Alignment(0.19, 0.2),
+              margin: EdgeInsets.all(15),
+              child: FloatingActionButton.extended(
+                label: Text('SKILLS'),
+                onPressed: () {
+                  //action code for button 2
+                },
+              )), // button second
+
+          Container(
+              decoration: BoxDecoration(),
+              alignment: Alignment(0.19, 0.4),
+              margin: EdgeInsets.all(15),
+              child: FloatingActionButton.extended(
+                label: Text('WHY ME? '),
+                onPressed: () {
+                  //action code for button 2
+                },
+              )), // button third
+          Container(
+              alignment: Alignment(0.19, 0.6),
+              margin: EdgeInsets.all(15),
+              child: FloatingActionButton.extended(
+                label: Text('CONTACT INFO'),
+                onPressed: () {
+                  //action code for button 2
+                },
+              )),
+        ],
+      ),
+      backgroundColor: Color.fromARGB(255, 205, 202, 202),
+      // ignore: prefer_const_constructors
+      appBar: AppBar(
+          title: Text(
+        "PORTFOLIO",
+      )),
       body: Center(
         child: Column(
           children: <Widget>[
             Container(
-                width: 500,
-                height: 150,
+                width: 420,
+                height: 160,
                 decoration: BoxDecoration(
                   color: Colors.red,
                   gradient: LinearGradient(colors: [
                     Colors.white,
-                    Colors.red,
+                    Colors.grey,
                     Colors.white,
-                    Colors.red,
+                    Colors.grey,
                     Colors.white,
-                    Colors.red,
-                    Colors.white,
-                    Colors.red,
-                    Colors.white,
-                    Colors.red,
-                    Colors.white,
-                    Colors.red,
-                    Colors.white,
-                    Colors.red,
-                    Colors.white,
-                    Colors.red,
-                    Colors.white,
-                    Colors.red,
-                    Colors.white,
-                    Colors.red,
+                    Colors.grey,
                   ]),
                   boxShadow: [
                     BoxShadow(
@@ -53,23 +87,68 @@ class HomePage extends StatelessWidget {
                 ),
                 margin: const EdgeInsets.fromLTRB(0, 0, 0, 0),
                 child: Image.asset(
-                  "assets/hk2.png",
+                  "assets/Sub.png",
                   alignment: Alignment(-1, -1),
                   height: 100,
-                  width: 160,
+                  width: 180,
                 )),
             Container(
               child: AnimatedTextKit(
                 animatedTexts: [
                   RotateAnimatedText('EAT',
-                      alignment: Alignment(0.4, -4),
-                      textStyle: TextStyle(fontSize: 40)),
+                      alignment: Alignment(0.4, -3.5),
+                      textStyle: TextStyle(fontSize: 45)),
                   RotateAnimatedText('SLEEP',
-                      alignment: Alignment(0.4, -4),
-                      textStyle: TextStyle(fontSize: 40)),
+                      alignment: Alignment(0.4, -3.5),
+                      textStyle: TextStyle(fontSize: 45)),
                   RotateAnimatedText('CODE',
-                      alignment: Alignment(0.4, -4),
-                      textStyle: TextStyle(fontSize: 40)),
+                      alignment: Alignment(0.4, -3.5),
+                      textStyle: TextStyle(fontSize: 45)),
+                  RotateAnimatedText('EAT',
+                      alignment: Alignment(0.4, -3.5),
+                      textStyle: TextStyle(fontSize: 45)),
+                  RotateAnimatedText('SLEEP',
+                      alignment: Alignment(0.4, -3.5),
+                      textStyle: TextStyle(fontSize: 45)),
+                  RotateAnimatedText('CODE',
+                      alignment: Alignment(0.4, -3.5),
+                      textStyle: TextStyle(fontSize: 45)),
+                  RotateAnimatedText('EAT',
+                      alignment: Alignment(0.4, -3.5),
+                      textStyle: TextStyle(fontSize: 45)),
+                  RotateAnimatedText('SLEEP',
+                      alignment: Alignment(0.4, -3.5),
+                      textStyle: TextStyle(fontSize: 45)),
+                  RotateAnimatedText('CODE',
+                      alignment: Alignment(0.4, -3.5),
+                      textStyle: TextStyle(fontSize: 45)),
+                  RotateAnimatedText('EAT',
+                      alignment: Alignment(0.4, -3.5),
+                      textStyle: TextStyle(fontSize: 45)),
+                  RotateAnimatedText('SLEEP',
+                      alignment: Alignment(0.4, -3.5),
+                      textStyle: TextStyle(fontSize: 45)),
+                  RotateAnimatedText('CODE',
+                      alignment: Alignment(0.4, -3.5),
+                      textStyle: TextStyle(fontSize: 45)),
+                  RotateAnimatedText('EAT',
+                      alignment: Alignment(0.4, -3.5),
+                      textStyle: TextStyle(fontSize: 45)),
+                  RotateAnimatedText('SLEEP',
+                      alignment: Alignment(0.4, -3.5),
+                      textStyle: TextStyle(fontSize: 45)),
+                  RotateAnimatedText('CODE',
+                      alignment: Alignment(0.4, -3.5),
+                      textStyle: TextStyle(fontSize: 45)),
+                  RotateAnimatedText('EAT',
+                      alignment: Alignment(0.4, -3.5),
+                      textStyle: TextStyle(fontSize: 45)),
+                  RotateAnimatedText('SLEEP',
+                      alignment: Alignment(0.4, -3.5),
+                      textStyle: TextStyle(fontSize: 45)),
+                  RotateAnimatedText('CODE',
+                      alignment: Alignment(0.4, -3.5),
+                      textStyle: TextStyle(fontSize: 45)),
                 ],
               ),
             ),
@@ -77,5 +156,12 @@ class HomePage extends StatelessWidget {
         ),
       ),
     );
+  }
+}
+
+class Aboutme extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
   }
 }
