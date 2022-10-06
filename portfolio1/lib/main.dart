@@ -16,7 +16,7 @@ class HomePage extends StatelessWidget {
         //use vertical to show  on vertical axis
         children: <Widget>[
           Container(
-              margin: EdgeInsets.all(15),
+              margin: EdgeInsets.all(20),
               alignment: Alignment(0.19, 2),
               child: FloatingActionButton.extended(
                 label: Text('ABOUT ME'),
@@ -27,7 +27,7 @@ class HomePage extends StatelessWidget {
 
           Container(
               alignment: Alignment(0.19, 0.2),
-              margin: EdgeInsets.all(15),
+              margin: EdgeInsets.all(20),
               child: FloatingActionButton.extended(
                 label: Text('SKILLS'),
                 onPressed: () {
@@ -61,6 +61,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
           title: Text(
         "PORTFOLIO",
+        style: TextStyle(fontFamily: 'Silkscreen', fontSize: 40),
       )),
       body: Center(
         child: Column(
@@ -93,62 +94,43 @@ class HomePage extends StatelessWidget {
                   width: 180,
                 )),
             Container(
+              width: 200,
+              height: 200,
+              child: AnimatedTextKit(
+                animatedTexts: [
+                  TyperAnimatedText('Welcome viewer    !',
+                      textStyle: TextStyle(
+                          color: Colors.black,
+                          fontSize: 30,
+                          backgroundColor: Colors.grey)),
+                  TyperAnimatedText(
+                      "My name is Hammad and I'm a trainee at GDSC.",
+                      textStyle: TextStyle(
+                          fontFamily: 'AbyssinicaSIL',
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold)),
+                ],
+              ),
+              alignment: Alignment(52, -4.8),
+              margin: const EdgeInsets.fromLTRB(111, 120, 0, 0),
+            ),
+            Container(
+              margin: const EdgeInsets.fromLTRB(40, 0, 100, 0),
+              alignment: Alignment.center,
               child: AnimatedTextKit(
                 animatedTexts: [
                   RotateAnimatedText('EAT',
-                      alignment: Alignment(0.4, -3.5),
-                      textStyle: TextStyle(fontSize: 45)),
-                  RotateAnimatedText('SLEEP',
-                      alignment: Alignment(0.4, -3.5),
-                      textStyle: TextStyle(fontSize: 45)),
+                      alignment: Alignment(0.4, -4),
+                      textStyle:
+                          TextStyle(fontFamily: 'Silkscreen', fontSize: 70)),
                   RotateAnimatedText('CODE',
-                      alignment: Alignment(0.4, -3.5),
-                      textStyle: TextStyle(fontSize: 45)),
-                  RotateAnimatedText('EAT',
-                      alignment: Alignment(0.4, -3.5),
-                      textStyle: TextStyle(fontSize: 45)),
+                      alignment: Alignment(0.4, -4),
+                      textStyle:
+                          TextStyle(fontFamily: 'Silkscreen', fontSize: 70)),
                   RotateAnimatedText('SLEEP',
-                      alignment: Alignment(0.4, -3.5),
-                      textStyle: TextStyle(fontSize: 45)),
-                  RotateAnimatedText('CODE',
-                      alignment: Alignment(0.4, -3.5),
-                      textStyle: TextStyle(fontSize: 45)),
-                  RotateAnimatedText('EAT',
-                      alignment: Alignment(0.4, -3.5),
-                      textStyle: TextStyle(fontSize: 45)),
-                  RotateAnimatedText('SLEEP',
-                      alignment: Alignment(0.4, -3.5),
-                      textStyle: TextStyle(fontSize: 45)),
-                  RotateAnimatedText('CODE',
-                      alignment: Alignment(0.4, -3.5),
-                      textStyle: TextStyle(fontSize: 45)),
-                  RotateAnimatedText('EAT',
-                      alignment: Alignment(0.4, -3.5),
-                      textStyle: TextStyle(fontSize: 45)),
-                  RotateAnimatedText('SLEEP',
-                      alignment: Alignment(0.4, -3.5),
-                      textStyle: TextStyle(fontSize: 45)),
-                  RotateAnimatedText('CODE',
-                      alignment: Alignment(0.4, -3.5),
-                      textStyle: TextStyle(fontSize: 45)),
-                  RotateAnimatedText('EAT',
-                      alignment: Alignment(0.4, -3.5),
-                      textStyle: TextStyle(fontSize: 45)),
-                  RotateAnimatedText('SLEEP',
-                      alignment: Alignment(0.4, -3.5),
-                      textStyle: TextStyle(fontSize: 45)),
-                  RotateAnimatedText('CODE',
-                      alignment: Alignment(0.4, -3.5),
-                      textStyle: TextStyle(fontSize: 45)),
-                  RotateAnimatedText('EAT',
-                      alignment: Alignment(0.4, -3.5),
-                      textStyle: TextStyle(fontSize: 45)),
-                  RotateAnimatedText('SLEEP',
-                      alignment: Alignment(0.4, -3.5),
-                      textStyle: TextStyle(fontSize: 45)),
-                  RotateAnimatedText('CODE',
-                      alignment: Alignment(0.4, -3.5),
-                      textStyle: TextStyle(fontSize: 45)),
+                      alignment: Alignment(0.4, -4),
+                      textStyle:
+                          TextStyle(fontFamily: 'Silkscreen', fontSize: 70)),
                 ],
               ),
             ),
