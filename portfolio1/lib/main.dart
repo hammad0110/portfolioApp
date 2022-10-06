@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MaterialApp(
     home: HomePage(),
-    theme: ThemeData(primarySwatch: const Color.fromARGB(255, 158, 158, 158)),
+    theme: ThemeData(primarySwatch: Colors.grey),
   ));
 }
 
