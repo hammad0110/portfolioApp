@@ -69,6 +69,7 @@ class HomePage extends StatelessWidget {
             Container(
                 width: 420,
                 height: 160,
+                // ignore: prefer_const_constructors
                 decoration: BoxDecoration(
                   color: Colors.red,
                   gradient: LinearGradient(colors: [
