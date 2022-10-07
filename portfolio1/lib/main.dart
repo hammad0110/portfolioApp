@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
     home: HomePage(),
     theme: ThemeData(primarySwatch: Colors.grey),
   ));
@@ -16,7 +17,7 @@ class HomePage extends StatelessWidget {
         //use vertical to show  on vertical axis
         children: <Widget>[
           Container(
-              margin: EdgeInsets.all(20),
+              margin: EdgeInsets.fromLTRB(20, 20, 20, 30),
               alignment: Alignment(0.19, 2),
               child: FloatingActionButton.extended(
                 label: Text('ABOUT ME'),
@@ -27,7 +28,7 @@ class HomePage extends StatelessWidget {
 
           Container(
               alignment: Alignment(0.19, 0.2),
-              margin: EdgeInsets.all(20),
+              margin: EdgeInsets.fromLTRB(20, 20, 20, 30),
               child: FloatingActionButton.extended(
                 label: Text('SKILLS'),
                 onPressed: () {
@@ -38,7 +39,7 @@ class HomePage extends StatelessWidget {
           Container(
               decoration: BoxDecoration(),
               alignment: Alignment(0.19, 0.4),
-              margin: EdgeInsets.all(15),
+              margin: EdgeInsets.fromLTRB(20, 20, 20, 30),
               child: FloatingActionButton.extended(
                 label: Text('WHY ME? '),
                 onPressed: () {
@@ -47,7 +48,7 @@ class HomePage extends StatelessWidget {
               )), // button third
           Container(
               alignment: Alignment(0.19, 0.6),
-              margin: EdgeInsets.all(15),
+              margin: EdgeInsets.fromLTRB(20, 20, 20, 30),
               child: FloatingActionButton.extended(
                 label: Text('CONTACT INFO'),
                 onPressed: () {
@@ -98,12 +99,14 @@ class HomePage extends StatelessWidget {
               width: 200,
               height: 200,
               child: AnimatedTextKit(
+                repeatForever: true,
                 animatedTexts: [
-                  TyperAnimatedText('Welcome viewer    !',
+                  TyperAnimatedText('Welcome      viewer!',
                       textStyle: TextStyle(
                           color: Colors.black,
-                          fontSize: 30,
-                          backgroundColor: Colors.grey)),
+                          fontSize: 37,
+                          fontFamily: 'Raleway',
+                          fontWeight: FontWeight.bold)),
                   TyperAnimatedText(
                       "My name is Hammad and I'm a trainee at GDSC.",
                       textStyle: TextStyle(
@@ -119,17 +122,18 @@ class HomePage extends StatelessWidget {
               margin: const EdgeInsets.fromLTRB(40, 0, 100, 0),
               alignment: Alignment.center,
               child: AnimatedTextKit(
+                repeatForever: true,
                 animatedTexts: [
                   RotateAnimatedText('EAT',
-                      alignment: Alignment(0.4, -4),
+                      alignment: Alignment(0.5, -4.5),
                       textStyle:
                           TextStyle(fontFamily: 'Silkscreen', fontSize: 70)),
                   RotateAnimatedText('CODE',
-                      alignment: Alignment(0.4, -4),
+                      alignment: Alignment(0.9, -4.6),
                       textStyle:
                           TextStyle(fontFamily: 'Silkscreen', fontSize: 70)),
                   RotateAnimatedText('SLEEP',
-                      alignment: Alignment(0.4, -4),
+                      alignment: Alignment(2, -4.7),
                       textStyle:
                           TextStyle(fontFamily: 'Silkscreen', fontSize: 70)),
                 ],
