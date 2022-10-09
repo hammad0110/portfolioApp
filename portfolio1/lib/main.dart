@@ -88,6 +88,8 @@ class HomePage extends StatelessWidget {
                 // ignore: prefer_const_constructors
                 decoration: BoxDecoration(
                   color: Colors.red,
+                  border: Border.all(),
+                  borderRadius: BorderRadius.all(Radius.circular(10)),
                   gradient: LinearGradient(colors: [
                     Colors.white,
                     Colors.grey,
@@ -98,12 +100,12 @@ class HomePage extends StatelessWidget {
                   ]),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.grey,
-                      blurRadius: 10,
+                      color: Color.fromARGB(73, 15, 17, 71),
+                      blurRadius: 200,
                     )
                   ],
                 ),
-                margin: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+                margin: const EdgeInsets.fromLTRB(5, 5, 5, 0),
                 child: Image.asset(
                   "assets/Sub.png",
                   alignment: Alignment(-1, -1),
@@ -151,6 +153,10 @@ class HomePage extends StatelessWidget {
                       alignment: Alignment(2, -4.7),
                       textStyle:
                           TextStyle(fontFamily: 'Silkscreen', fontSize: 70)),
+                  RotateAnimatedText('REPEAT',
+                      alignment: Alignment(10, -4.8),
+                      textStyle:
+                          TextStyle(fontFamily: 'Silkscreen', fontSize: 65)),
                 ],
               ),
             ),
@@ -178,9 +184,9 @@ class Aboutme extends StatelessWidget {
               margin: const EdgeInsets.fromLTRB(0, 20, 0, 0),
               child: SizedBox(
                   child: Text(
-                    "        SCHOOLING\n"
-                    "Hi there you've been warned",
-                    style: TextStyle(fontFamily: 'Silkscreen', fontSize: 25),
+                    "            WHO AM I?\n"
+                    "I was born and raised in Lucknow from where I did my schooling from SFC till High School thereafter I did a two year pinnacle program from FIITJEE and ended up in AKGEC from where I'm pursuing my BTECH in Computer Science and Engineering. ",
+                    style: TextStyle(fontFamily: 'Silkscreen', fontSize: 21),
                   ),
                   height: 300,
                   width: 380),
@@ -195,12 +201,12 @@ class Aboutme extends StatelessWidget {
               margin: const EdgeInsets.fromLTRB(0, 20, 0, 0),
               child: SizedBox(
                   child: Text(
-                    "        SCHOOLING\n"
-                    "Hi there you've been warned",
-                    style: TextStyle(fontFamily: 'Silkscreen', fontSize: 25),
+                    "          HOBBIES\n"
+                    "My hobbies include football and fitness and apart from that I like collecting coins.⚽️🏋🏻‍♂️🪙",
+                    style: TextStyle(fontFamily: 'Silkscreen', fontSize: 21.3),
                   ),
-                  height: 200,
-                  width: 360),
+                  height: 180,
+                  width: 350),
               decoration: new BoxDecoration(boxShadow: [
                 new BoxShadow(
                   color: Color.fromARGB(147, 146, 154, 150),
@@ -212,12 +218,14 @@ class Aboutme extends StatelessWidget {
               margin: const EdgeInsets.fromLTRB(0, 20, 0, 0),
               child: SizedBox(
                   child: Text(
-                    "        SCHOOLING\n"
-                    "Hi there you've been warned",
-                    style: TextStyle(fontFamily: 'Silkscreen', fontSize: 25),
+                    "           STRENGTHS\n"
+                    "Family and friends are my biggest strengths.🤝🏻🫂\n"
+                    "           WEAKNESSES\n"
+                    "My weakness is that I'm addicted to coffee even though it makes me more alive throughout the day.☕️",
+                    style: TextStyle(fontFamily: 'Silkscreen', fontSize: 19.5),
                   ),
-                  height: 200,
-                  width: 330),
+                  height: 210,
+                  width: 350),
               decoration: new BoxDecoration(boxShadow: [
                 new BoxShadow(
                   color: Color.fromARGB(147, 146, 154, 150),
@@ -242,9 +250,34 @@ class Skills extends StatelessWidget {
         "SKILLS",
         style: TextStyle(fontFamily: 'Silkscreen', fontSize: 40),
       )),
+      body: (Center(
+        child: Column(
+          children: <Widget>[
+            Container(
+              margin: const EdgeInsets.fromLTRB(0, 20, 0, 0),
+              child: SizedBox(
+                  child: Text(
+                    "       TECHNICAL SKILLS💻\n\n"
+                    "Programming using C and C++.\n\n"
+                    "Application development using Swift,flutter and dart.\n\n"
+                    "Web Development using HTML,CSS and JAVASCRIPT.\n\n"
+                    "Basics of Machine learning using Xcode.",
+                    style: TextStyle(fontFamily: 'Silkscreen', fontSize: 21),
+                  ),
+                  height: 440,
+                  width: 360),
+              decoration: new BoxDecoration(boxShadow: [
+                new BoxShadow(
+                  color: Color.fromARGB(147, 146, 154, 150),
+                  blurRadius: 10.0,
+                ),
+              ]),
+            ),
+          ],
+        ),
+      )),
       backgroundColor: Color.fromARGB(255, 205, 202, 202),
     );
-    ;
   }
 }
 
@@ -255,11 +288,35 @@ class Whyme extends StatelessWidget {
       appBar: AppBar(
           title: Text(
         "WHY ME?",
-        style: TextStyle(fontFamily: 'Silkscreen', fontSize: 40),
+        style: TextStyle(fontFamily: 'Silkscreen', fontSize: 42),
+      )),
+      body: (Center(
+        child: Column(
+          children: <Widget>[
+            Container(
+              margin: const EdgeInsets.fromLTRB(0, 20, 0, 0),
+              child: SizedBox(
+                  child: Text(
+                    "\nOver the years, I have acquired relevant skills and experience, which I shall bring to your organization.\n"
+                    "I have also worked tirelessly on my communication abilities and teamwork skills, which I will put to use in my future career, which would be in your organization if I am selected for the position.\n"
+                    "I have given my 100% effort in my past companies, and this has enabled me to recognize my capabilities and limitations.\n"
+                    "If I channelize them further, they will bring fruitful results to me and also to your esteemed organization.\n",
+                    style: TextStyle(fontFamily: 'Silkscreen', fontSize: 21),
+                  ),
+                  height: 740,
+                  width: 370),
+              decoration: new BoxDecoration(boxShadow: [
+                new BoxShadow(
+                  color: Color.fromARGB(147, 146, 154, 150),
+                  blurRadius: 15.0,
+                ),
+              ]),
+            ),
+          ],
+        ),
       )),
       backgroundColor: Color.fromARGB(255, 205, 202, 202),
     );
-    ;
   }
 }
 
@@ -269,11 +326,36 @@ class Contact extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
           title: Text(
-        "CONTACT INFO",
+        "CONTACT ME",
         style: TextStyle(fontFamily: 'Silkscreen', fontSize: 40),
+      )),
+      body: (Center(
+        child: Column(
+          children: <Widget>[
+            Container(
+              margin: const EdgeInsets.fromLTRB(0, 20, 0, 0),
+              child: SizedBox(
+                  child: Text(
+                    "       TECHNICAL SKILLS💻\n\n"
+                    "Programming using C and C++.\n\n"
+                    "Application development using Swift,flutter and dart.\n\n"
+                    "Web Development using HTML,CSS and JAVASCRIPT.\n\n"
+                    "Basics of Machine learning using Xcode.",
+                    style: TextStyle(fontFamily: 'Silkscreen', fontSize: 21),
+                  ),
+                  height: 440,
+                  width: 360),
+              decoration: new BoxDecoration(boxShadow: [
+                new BoxShadow(
+                  color: Color.fromARGB(147, 146, 154, 150),
+                  blurRadius: 10.0,
+                ),
+              ]),
+            ),
+          ],
+        ),
       )),
       backgroundColor: Color.fromARGB(255, 205, 202, 202),
     );
-    ;
   }
 }
