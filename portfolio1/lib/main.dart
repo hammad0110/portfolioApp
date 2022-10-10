@@ -336,7 +336,7 @@ class Contact extends StatelessWidget {
               margin: const EdgeInsets.fromLTRB(0, 20, 0, 0),
               child: SizedBox(
                   child: Text(
-                    "       TECHNICAL SKILLS💻\n\n"
+                    "      \n\n"
                     "Programming using C and C++.\n\n"
                     "Application development using Swift,flutter and dart.\n\n"
                     "Web Development using HTML,CSS and JAVASCRIPT.\n\n"
