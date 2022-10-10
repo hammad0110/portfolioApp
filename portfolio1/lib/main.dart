@@ -326,8 +326,8 @@ class Contact extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
           title: Text(
-        "CONTACT ME",
-        style: TextStyle(fontFamily: 'Silkscreen', fontSize: 40),
+        "CONTACT INFO",
+        style: TextStyle(fontFamily: 'Silkscreen', fontSize: 35),
       )),
       body: (Center(
         child: Column(
@@ -336,12 +336,17 @@ class Contact extends StatelessWidget {
               margin: const EdgeInsets.fromLTRB(0, 20, 0, 0),
               child: SizedBox(
                   child: Text(
-                    "      \n\n"
-                    "Programming using C and C++.\n\n"
-                    "Application development using Swift,flutter and dart.\n\n"
-                    "Web Development using HTML,CSS and JAVASCRIPT.\n\n"
-                    "Basics of Machine learning using Xcode.",
-                    style: TextStyle(fontFamily: 'Silkscreen', fontSize: 21),
+                    " \n\n"
+                    "Github :hammad0110"
+                    "\n\n"
+                    "Instagram :hammad.xxi"
+                    "\n\n"
+                    "codechef:hammad.xxi"
+                    "\n\n"
+                    "contact Number: 7355402028"
+                    "\n\n"
+                    "email:hammad2110127@akgec.ac.in",
+                    style: TextStyle(fontFamily: 'Silkscreen', fontSize: 23),
                   ),
                   height: 440,
                   width: 360),
